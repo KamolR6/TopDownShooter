@@ -12,3 +12,13 @@ if(healthPoints <= 0){
 		}
 	}
 }
+
+//might be problematic later on (sorry future me)
+if (shootCooldown > 0 || shootCooldown <= -1) 
+	{
+		shootCooldown--
+		canShoot = false
+	}
+	else{
+		canShoot = true
+	}
