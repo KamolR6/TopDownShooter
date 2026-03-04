@@ -10,5 +10,5 @@ if(returning){
 
 if (place_meeting(x, y, owner)&& returning) {
 	instance_destroy();
-	objGame.canShoot=true
+	objGame.shootCooldown=0
 }

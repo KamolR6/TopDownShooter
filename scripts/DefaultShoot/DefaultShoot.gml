@@ -3,6 +3,9 @@ function DefaultShoot(shooter, players){
 		var shotBullet = instance_create_layer(shooter.x, shooter.y, "Instances", objDefaultProjectile)
 		shotBullet.direction = shooter.image_angle
 		shotBullet.owner = shooter
-		shotBullet.playersBullet = players
+		shotBullet.shotByPlayer = 
+		shotBullet.startX = shooter.x;
+		shotBullet.startY = shooter.y;
+		objGame.shootCooldown = 40
 	}
 }
