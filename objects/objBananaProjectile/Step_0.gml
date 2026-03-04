@@ -1,3 +1,5 @@
+image_angle -= 15
+
 if(!returning && distance_to_object(owner) > 200){
 	returning = true
 }
