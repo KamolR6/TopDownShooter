@@ -1,4 +1,4 @@
 
-if(enemyHealhPoints <= 0){
+if(enemyHealhtPoints <= 0){
 	instance_destroy()
 }

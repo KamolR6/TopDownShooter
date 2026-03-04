@@ -6,8 +6,8 @@ if(!other.returning){
 
 
 if(!invulnerability){
-	enemyHealhPoints -= other.dmg
+	enemyHealhtPoints -= other.dmg
 	image_blend = c_red
 	invulnerability = true
-	alarm_set(0,15)
+	alarm_set(0,5)
 }

@@ -1,4 +1,4 @@
-enemyHealhPoints = 100
+enemyHealhtPoints = 100
 enemySpeed = 3
 enemyCanShoot = true
 invulnerability = false
