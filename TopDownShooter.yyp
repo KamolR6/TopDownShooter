@@ -41,6 +41,7 @@
   "resources":[
     {"id":{"name":"objBananaProjectile","path":"objects/objBananaProjectile/objBananaProjectile.yy",},},
     {"id":{"name":"objBananaWeapon","path":"objects/objBananaWeapon/objBananaWeapon.yy",},},
+    {"id":{"name":"objCarrotWeapon","path":"objects/objCarrotWeapon/objCarrotWeapon.yy",},},
     {"id":{"name":"objCollisionBox","path":"objects/objCollisionBox/objCollisionBox.yy",},},
     {"id":{"name":"objDefaultProjectile","path":"objects/objDefaultProjectile/objDefaultProjectile.yy",},},
     {"id":{"name":"objDefEnemy","path":"objects/objDefEnemy/objDefEnemy.yy",},},
@@ -53,6 +54,7 @@
     {"id":{"name":"DefaultShoot","path":"scripts/DefaultShoot/DefaultShoot.yy",},},
     {"id":{"name":"sprBananaWeapon","path":"sprites/sprBananaWeapon/sprBananaWeapon.yy",},},
     {"id":{"name":"sprBullet","path":"sprites/sprBullet/sprBullet.yy",},},
+    {"id":{"name":"sprCarrotWeapon","path":"sprites/sprCarrotWeapon/sprCarrotWeapon.yy",},},
     {"id":{"name":"sprColisionBox","path":"sprites/sprColisionBox/sprColisionBox.yy",},},
     {"id":{"name":"sprDefaultWeapon","path":"sprites/sprDefaultWeapon/sprDefaultWeapon.yy",},},
     {"id":{"name":"sprEnemy","path":"sprites/sprEnemy/sprEnemy.yy",},},
