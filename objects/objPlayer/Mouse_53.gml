@@ -6,5 +6,8 @@ if(objGame.canShoot == true){
 		case 1:
 			BananaShoot(objPlayer)
 			break
+		case 2:
+			CarrotAttack(objPlayer)
+			break
 	}
 }
