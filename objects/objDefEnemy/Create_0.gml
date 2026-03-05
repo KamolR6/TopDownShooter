@@ -1,4 +1,3 @@
-enemyHealhtPoints = 100
-enemySpeed = 3
-enemyCanShoot = true
-invulnerability = false
+// Inherit the parent event
+event_inherited();
+moveState = true
