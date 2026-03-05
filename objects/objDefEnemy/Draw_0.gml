@@ -1,4 +1,2 @@
 // Inherit the parent event
 event_inherited();
-moveState = true
-var sum = 0

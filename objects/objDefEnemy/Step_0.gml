@@ -8,7 +8,7 @@ if(isSpawning == false){
 
 switch state{
 	case 1:
-		if(distance_to_object(objPlayer) < 250 ){
+		if(distance_to_object(objPlayer) > 250 ){
 			state = 2
 		}else{
 			if(moveState){
