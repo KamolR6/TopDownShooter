@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"objWeaponParent",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"objFButton",
+  "eventList":[],
   "managed":true,
-  "name":"objWeaponParent",
+  "name":"objFButton",
   "overriddenProperties":[],
   "parent":{
-    "name":"Weapons",
-    "path":"folders/Objects/Weapons.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprFButton",
+    "path":"sprites/sprFButton/sprFButton.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
