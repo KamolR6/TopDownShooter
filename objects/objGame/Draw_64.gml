@@ -1,4 +1,5 @@
 var gunSprite = noone
+var sizeSprite = 32
 switch heldGun{
 	case 0:
 		gunSprite = sprDefaultWeapon
@@ -6,6 +7,10 @@ switch heldGun{
 	case 1:
 		gunSprite = sprBananaWeapon
 		break
+	case 2:
+		gunSprite = sprCarrotWeapon
+		break
 }
 //draw_sprite(gunSprite, image_index, 15,15)
-draw_sprite_stretched(gunSprite, image_index, 15,15,32,32)
+
+draw_sprite_stretched(gunSprite, image_index, 15,15,sizeSprite, sizeSprite)

@@ -1,2 +1,2 @@
 dmg = 0;
-weaponNumber = 0;
+weaponType = 0;

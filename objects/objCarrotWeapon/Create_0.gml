@@ -1,0 +1,1 @@
+weaponType = 2;
