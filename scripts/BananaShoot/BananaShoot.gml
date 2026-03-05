@@ -1,7 +1,7 @@
-function BananaShoot(shooter){
+function BananaShoot(attacker){
 	if(objGame.canShoot){
-		var shotBanana = instance_create_layer(shooter.x, shooter.y, "Instances", objBananaProjectile)
-		shotBanana.owner = shooter
-		shotBanana.direction = shooter.image_angle
+		var projectile = instance_create_layer(attacker.x, attacker.y, "Instances", objBananaProjectile)
+		projectile.owner = attacker
+		projectile.direction = attacker.image_angle
 	}
 }

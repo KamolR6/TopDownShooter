@@ -1,11 +1,11 @@
-function DefaultShoot(shooter, players){
+function DefaultShoot(attacker, isPlayers){
 	if(objGame.canShoot){
-		var shotBullet = instance_create_layer(shooter.x, shooter.y, "Instances", objDefaultProjectile)
-		shotBullet.direction = shooter.image_angle
-		shotBullet.owner = shooter
-		shotBullet.shotByPlayer = 
-		shotBullet.startX = shooter.x;
-		shotBullet.startY = shooter.y;
+		var projectile = instance_create_layer(attacker.x, attacker.y, "Instances", objDefaultProjectile)
+		projectile.direction = attacker.image_angle
+		projectile.owner = attacker
+		projectile.shotByPlayer = isPlayers
+		projectile.startX = attacker.x;
+		projectile.startY = attacker.y;
 		objGame.shootCooldown = 40
 	}
 }
