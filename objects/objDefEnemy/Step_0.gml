@@ -1,24 +1,45 @@
 // Inherit the parent event
 event_inherited();
 
-		//place of collision
-		var inst = instance_place(x, y, objEnemyParent)
-		if(inst != noone){
-			//distance beetwen enemies
-			var dist_x = x - inst.x
-			var dist_y = y - inst.y
+//place of collision
+var enemyCol = instance_place(x, y, objEnemyParent)
+if(enemyCol != noone){
+	//distance beetwen enemies
+	var dist_x = x - enemyCol.x
+	var dist_y = y - enemyCol.y
 			
-			var dist = point_distance(x, y, inst.x, inst.y)
-			var min_dist = sprite_width/2 + inst.sprite_width/2 
+	var dist = point_distance(x, y, enemyCol.x, enemyCol.y)
+	var min_dist = sprite_width/2 + enemyCol.sprite_width/2 
 			
-			//push enemies only if they overlap
-			if(dist < min_dist && dist != 0){
-				var push_strength = (min_dist - dist) * 0.2  
-				x += dist_x / dist * push_strength
-				y += dist_y / dist * push_strength
-			}
-		}	
+	//push enemies only if they overlap
+	if(dist < min_dist && dist != 0){
+		var push_strength = (min_dist - dist) * 0.2  
+		x += dist_x / dist * push_strength
+		y += dist_y / dist * push_strength
+	}
+}	
 
+
+    var dist = distance_to_object(objPlayer)
+
+    if (dist <= 8) {
+        if (sprite_index != sprEnemyAttack) {
+            sprite_index = sprEnemyAttack
+            image_index = 0
+        }
+
+        if (!objPlayer.invulnerability && image_index == 3) {
+            objGame.healthPoints -= dmg
+            with (objPlayer) {
+				image_blend = c_red
+				invulnerability = true
+				alarm[0] = 30
+				}
+        }
+    }
+    else {
+        sprite_index = sprEnemy
+    }
 
 if(!isSpawning){
 	if distance_to_object(objPlayer) < 150 {

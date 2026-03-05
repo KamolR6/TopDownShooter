@@ -39,6 +39,9 @@
     "name":"sprEnemy",
     "path":"sprites/sprEnemy/sprEnemy.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sprEnemy",
+    "path":"sprites/sprEnemy/sprEnemy.yy",
+  },
   "visible":true,
 }
