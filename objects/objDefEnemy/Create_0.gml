@@ -2,5 +2,3 @@ enemyHealhtPoints = 100
 enemySpeed = 3
 enemyCanShoot = true
 invulnerability = false
-isSpawning = true
-image_alpha = 0
