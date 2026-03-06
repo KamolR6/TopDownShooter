@@ -1,3 +1,4 @@
+if(!isDisaspearing){
 self.depth = objGame.depth + 1
 playerNearby = collision_circle(x, y, 32, objPlayer, false, true)
 
@@ -17,6 +18,5 @@ if(keyboard_check_pressed(ord("F")) && distance_to_object(objPlayer) <= 32){
 	objGame.heldGun = other.weaponType
 	instance_destroy()
 	instance_destroy(button)
-	
-	
+}
 }
