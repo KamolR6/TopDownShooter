@@ -1,5 +1,7 @@
 var gunSprite = noone
 var sizeSprite = 32
+
+if(room_get_name != "r_Menu"){
 switch heldGun{
 	case 0:
 		gunSprite = sprDefaultWeapon
@@ -14,3 +16,4 @@ switch heldGun{
 //draw_sprite(gunSprite, image_index, 15,15)
 
 draw_sprite_stretched(gunSprite, image_index, 15,15,sizeSprite, sizeSprite)
+}

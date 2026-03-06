@@ -52,8 +52,11 @@
     {"id":{"name":"objFButton","path":"objects/objFButton/objFButton.yy",},},
     {"id":{"name":"objGame","path":"objects/objGame/objGame.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
+    {"id":{"name":"objSpawner","path":"objects/objSpawner/objSpawner.yy",},},
     {"id":{"name":"objWeaponParent","path":"objects/objWeaponParent/objWeaponParent.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"r_InfiniteMode","path":"rooms/r_InfiniteMode/r_InfiniteMode.yy",},},
+    {"id":{"name":"r_menu","path":"rooms/r_menu/r_menu.yy",},},
+    {"id":{"name":"r_TestRoom","path":"rooms/r_TestRoom/r_TestRoom.yy",},},
     {"id":{"name":"BananaShoot","path":"scripts/BananaShoot/BananaShoot.yy",},},
     {"id":{"name":"CarrotAttack","path":"scripts/CarrotAttack/CarrotAttack.yy",},},
     {"id":{"name":"DefaultShoot","path":"scripts/DefaultShoot/DefaultShoot.yy",},},
@@ -72,7 +75,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"r_InfiniteMode","path":"rooms/r_InfiniteMode/r_InfiniteMode.yy",},},
+    {"roomId":{"name":"r_TestRoom","path":"rooms/r_TestRoom/r_TestRoom.yy",},},
+    {"roomId":{"name":"r_menu","path":"rooms/r_menu/r_menu.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
