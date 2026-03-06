@@ -54,8 +54,12 @@ if (state == 2 && prev_state != 2)
 {
 if (global.targetF_limit > global.targetF_sounds)
 {
+	var distS = point_distance(x, y, objPlayer.x, objPlayer.y);	
+	var gain = clamp(1 - (distS / objPlayer.maxHDist), 0, 1);
+	
     var s = audio_play_sound(sndTargetFound1, 0, false);
-    audio_sound_gain(s, 0.6, 0);
+	
+    audio_sound_gain(s, gain * 0.6, 0);
     audio_sound_pitch(s, random_range(0.95, 1.05));
     
     global.targetF_sounds += 1;
