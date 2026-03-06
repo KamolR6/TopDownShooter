@@ -22,17 +22,18 @@ if(enemyCol != noone){
 
     var dist = distance_to_object(objPlayer)
 
-    if (dist <= 8 && !objPlayer.invulnerability) {
+    if (dist <= 8 && !cooldown) {
         if (sprite_index != sprEnemyAttack) {
             sprite_index = sprEnemyAttack
             image_index = 0
         }
 
-        if (!objPlayer.invulnerability && image_index == 3) {
+        if (!cooldown && image_index == 3) {
             objGame.healthPoints -= dmg
+			cooldown = true
+			alarm_set(2,irandom_range(8,16))
             with (objPlayer) {
 				image_blend = c_red
-				invulnerability = true
 				alarm[0] = 30
 				}
         }
