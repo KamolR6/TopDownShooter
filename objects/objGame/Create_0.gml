@@ -4,6 +4,8 @@ canShoot = true
 shootCooldown = 0;
 playerScore = 0
 
+dead = false
+
 
 
 window_set_cursor(cr_cross)
