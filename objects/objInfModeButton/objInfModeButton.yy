@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"objFButton",
-  "eventList":[],
+  "%Name":"objInfModeButton",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"objFButton",
+  "name":"objInfModeButton",
   "overriddenProperties":[],
   "parent":{
     "name":"Buttons",
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprFButton",
-    "path":"sprites/sprFButton/sprFButton.yy",
+    "name":"sprInfModButton",
+    "path":"sprites/sprInfModButton/sprInfModButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -22,7 +22,7 @@ if(enemyCol != noone){
 
     var dist = distance_to_object(objPlayer)
 
-    if (dist <= 8) {
+    if (dist <= 8 && !objPlayer.invulnerability) {
         if (sprite_index != sprEnemyAttack) {
             sprite_index = sprEnemyAttack
             image_index = 0

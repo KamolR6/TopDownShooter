@@ -11,6 +11,7 @@ if (room_get_name != "r_Menu") {
         effect_create_depth(-100, ef_explosion, irandom_range(x - 30, x + 30),
                             irandom_range(y - 30, y + 30), 2, c_white)
       }
+	  alarm_set(0,30)
     }
   }
 
