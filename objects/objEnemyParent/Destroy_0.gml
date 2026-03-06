@@ -1,4 +1,4 @@
-lottery = irandom_range(1,6)
+lottery = irandom_range(1,4)
 if(lottery == 1){
 	var weaponNum = irandom_range(1,2)
 	var weapon = noone

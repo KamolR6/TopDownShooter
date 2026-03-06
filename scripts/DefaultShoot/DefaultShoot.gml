@@ -6,6 +6,6 @@ function DefaultShoot(attacker, isPlayers){
 		projectile.shotByPlayer = isPlayers
 		projectile.startX = attacker.x;
 		projectile.startY = attacker.y;
-		objGame.shootCooldown = 40
+		objGame.shootCooldown = 20
 	}
 }
