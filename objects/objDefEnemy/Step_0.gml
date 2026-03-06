@@ -22,25 +22,24 @@ if(enemyCol != noone){
 
     var dist = distance_to_object(objPlayer)
 
-    if (dist <= 8 && !cooldown) {
-        if (sprite_index != sprEnemyAttack) {
-            sprite_index = sprEnemyAttack
-            image_index = 0
-        }
+if (dist <= 8 && !cooldown) {
+	if (sprite_index != sprEnemyAttack) {
+		sprite_index = sprEnemyAttack
+		image_index = 0
+	}
 
-        if (!cooldown && image_index == 3) {
-            objGame.healthPoints -= dmg
-			cooldown = true
-			alarm_set(2,irandom_range(8,16))
-            with (objPlayer) {
-				image_blend = c_red
-				alarm[0] = 30
-				}
-        }
-    }
-    else {
-        sprite_index = sprEnemy
-    }
+	if (!cooldown && image_index == 3) {
+		objGame.healthPoints -= dmg
+		cooldown = true
+		alarm_set(2,irandom_range(8,16))
+		with (objPlayer) {
+			image_blend = c_red
+			alarm[0] = 30
+		}
+	}
+}else{
+		sprite_index = sprEnemy
+}
 
 if(!isSpawning){
 	if distance_to_object(objPlayer) < 150 {
