@@ -6,6 +6,9 @@ playerScore = 0
 
 dead = false
 
+global.targetF_sounds = 0;
+global.targetF_limit = 5;
+
 
 
 window_set_cursor(cr_cross)

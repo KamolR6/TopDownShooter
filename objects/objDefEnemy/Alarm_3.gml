@@ -1,0 +1,1 @@
+global.targetF_sounds -= 1;
