@@ -2,7 +2,8 @@ if(instance_exists(owner)){
 
 image_angle -= 15
 
-if(!returning && distance_to_object(owner) > 200){
+
+if(!returning && (point_distance(startX, startY, x, y) > 200)){
 	returning = true
 }
 
