@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"InfiniteRestart",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"InfiniteRestart",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

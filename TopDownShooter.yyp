@@ -63,6 +63,7 @@
     {"id":{"name":"BananaShoot","path":"scripts/BananaShoot/BananaShoot.yy",},},
     {"id":{"name":"CarrotAttack","path":"scripts/CarrotAttack/CarrotAttack.yy",},},
     {"id":{"name":"DefaultShoot","path":"scripts/DefaultShoot/DefaultShoot.yy",},},
+    {"id":{"name":"InfiniteRestart","path":"scripts/InfiniteRestart/InfiniteRestart.yy",},},
     {"id":{"name":"sndTargetFound1","path":"sounds/sndTargetFound1/sndTargetFound1.yy",},},
     {"id":{"name":"sprBananaWeapon","path":"sprites/sprBananaWeapon/sprBananaWeapon.yy",},},
     {"id":{"name":"sprBullet","path":"sprites/sprBullet/sprBullet.yy",},},
