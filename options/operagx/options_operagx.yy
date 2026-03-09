@@ -17,14 +17,22 @@
   "option_operagx_mod_team_id":"",
   "option_operagx_mod_team_name":"",
   "option_operagx_mod_version":"1.0.0.0",
+<<<<<<< HEAD
   "option_operagx_next_version":"1.0.0.6",
+=======
+  "option_operagx_next_version":"1.0.0.5",
+>>>>>>> d3b165c1a3857831bdf8773ec9d3e9c7d3882cd7
   "option_operagx_publicShareUrl":"https://gx.games/games/ys1oav/dead-by-sale/",
   "option_operagx_scale":0,
   "option_operagx_team_id":"75499224-17a8-45c7-872a-368a6c0e4902",
   "option_operagx_team_name":"KamolR6 studio",
   "option_operagx_texture_page":"2048x2048",
   "option_operagx_transparent_background":false,
+<<<<<<< HEAD
   "option_operagx_version":"1.0.0.5",
+=======
+  "option_operagx_version":"1.0.0.4",
+>>>>>>> d3b165c1a3857831bdf8773ec9d3e9c7d3882cd7
   "resourceType":"GMOperaGXOptions",
   "resourceVersion":"2.0",
 }

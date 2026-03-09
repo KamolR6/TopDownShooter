@@ -22,33 +22,53 @@ if(enemyCol != noone){
 
     var dist = distance_to_object(objPlayer)
 
-    if (dist <= 8) {
-        if (sprite_index != sprEnemyAttack) {
-            sprite_index = sprEnemyAttack
-            image_index = 0
-        }
+if (dist <= 8 && !cooldown) {
+	if (sprite_index != sprEnemyAttack) {
+		sprite_index = sprEnemyAttack
+		image_index = 0
+	}
 
-        if (!objPlayer.invulnerability && image_index == 3) {
-            objGame.healthPoints -= dmg
-            with (objPlayer) {
-				image_blend = c_red
-				invulnerability = true
-				alarm[0] = 30
-				}
-        }
-    }
-    else {
-        sprite_index = sprEnemy
-    }
+	if (!cooldown && image_index == 3) {
+		objGame.healthPoints -= dmg
+		cooldown = true
+		alarm_set(2,irandom_range(8,16))
+		with (objPlayer) {
+			image_blend = c_red
+			alarm[0] = 30
+		}
+	}
+}else{
+		sprite_index = sprEnemy
+}
 
 if(!isSpawning){
 	if distance_to_object(objPlayer) < 150 {
 		state = 2
+
    }else{
 		state = 1
    }
 }
 
+if (state == 2 && prev_state != 2)
+{
+if (global.targetF_limit > global.targetF_sounds)
+{
+	var distS = point_distance(x, y, objPlayer.x, objPlayer.y);	
+	var gain = clamp(1 - (distS / objPlayer.maxHDist), 0, 1);
+	
+    var s = audio_play_sound(sndTargetFound1, 0, false);
+	
+    audio_sound_gain(s, gain * 0.6, 0);
+    audio_sound_pitch(s, random_range(0.95, 1.05));
+    
+    global.targetF_sounds += 1;
+
+    alarm[3] = 60 * 0.3;
+	}
+}
+
+prev_state = state;
 
 switch state{
 	case 1:
