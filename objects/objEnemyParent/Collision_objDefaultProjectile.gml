@@ -7,8 +7,8 @@ if(!isSpawning){
 			image_blend = c_red
 		invulnerability = true
 		alarm_set(0,5)
-		with(other){
-			instance_destroy()
-		}
 	}
+}
+with(other){
+	instance_destroy()
 }

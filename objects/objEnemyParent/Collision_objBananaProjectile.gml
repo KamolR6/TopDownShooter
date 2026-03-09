@@ -2,6 +2,10 @@ if(!isSpawning){
 	if(!other.returning){
 		x += other.hspeed;
 		y += other.vspeed;
+		if(instance_place(x,y,objCollisionBox)){
+			enemyHealhtPoints -= 30
+		}
+		
 	}
 
 

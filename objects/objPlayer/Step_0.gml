@@ -1,6 +1,7 @@
 lookDir = point_direction(x,y,mouse_x,mouse_y)
 image_angle = lookDir
 
+//horizontall collsion
 if (instance_place(x + hspeed, y, objCollisionBox)) {
     
     var dir = sign(hspeed);
@@ -12,6 +13,7 @@ if (instance_place(x + hspeed, y, objCollisionBox)) {
     hspeed = 0;
 }
 
+//vertical collision
 if (instance_place(x, y + vspeed, objCollisionBox)) {
     
     var dir = sign(vspeed);
@@ -23,5 +25,5 @@ if (instance_place(x, y + vspeed, objCollisionBox)) {
     vspeed = 0;
 }
 
-
+//max speed
 speed = min(speed,playerSpeed)
