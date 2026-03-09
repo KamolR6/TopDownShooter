@@ -1,4 +1,6 @@
 
+//randomly checks for place to spawn player
+
 	do{
 	pos_x = irandom(room_width)
 	pos_y = irandom(room_height)

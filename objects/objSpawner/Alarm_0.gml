@@ -1,5 +1,8 @@
+
 alarm_set(0, irandom_range(30,90))
 var enemiesNum = instance_number(objEnemyParent)
+
+//randomly checks for place to spawn enemy
 
 if(enemiesNum < 10){
 	var pos_x

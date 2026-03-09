@@ -8,4 +8,5 @@ function InfiniteRestart(){
 	dead = false
 
 	global.targetF_sounds = 0;
+	room_goto(r_Menu)
 }
