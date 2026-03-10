@@ -8,4 +8,4 @@ prev_state = state;
 speedVal = 3
 
 //new behaviour
-path = path_add()
+path = -1
