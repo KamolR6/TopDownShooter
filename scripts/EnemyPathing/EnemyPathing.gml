@@ -1,7 +1,9 @@
 function EnemyPathing(gridID ,owner, alarmID, alarmCD, targetX, targetY){
 	
-	path_delete(owner.path)
-	path = path_add()
+	if (path_exists(owner.path)) {
+		path_delete(owner.path)
+	}
+	owner.path = path_add()
 	
 	//use grid to navigate to target
 	mp_grid_path(gridID, path, owner.x,owner.y, targetX, targetY, 1)
@@ -10,9 +12,9 @@ function EnemyPathing(gridID ,owner, alarmID, alarmCD, targetX, targetY){
 	if(owner.state == 2){
 		alarm_set(alarmID, alarmCD)
 	}else{
-		if(path_exists(path)){
-			path_delete(path)
+		if(path_exists(owner.path)){
+			path_delete(owner.path)
 		}
-		state = 1
+		owner.state = 1
 	}
 }
