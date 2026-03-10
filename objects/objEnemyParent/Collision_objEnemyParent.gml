@@ -1,1 +1,2 @@
-move_bounce_all(1)
+x -= dcos(point_direction(x, y, other.x, other.y))
+y += dsin(point_direction(x, y, other.x, other.y))
