@@ -2,7 +2,10 @@ draw_set_alpha(image_alpha)
 draw_self()
 draw_set_alpha(1)
 
-draw_path(path,x,y,1)
+//DEBUG
+if(path_exists(path)){
+	draw_path(path,x,y,1)
+}
 draw_text(x,y,state)
 
 if(!isSpawning){
