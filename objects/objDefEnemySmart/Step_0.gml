@@ -26,10 +26,12 @@ if (dist <= 8 && !cooldown) {
 
 // --- SCOUTING SCRIPT ---
 if(!isSpawning){
-	if distance_to_object(objPlayer) < 150 {
+	var isLosClear = !collision_line(x,y, objPlayer.x, objPlayer.y,objCollisionBox, true, true)
+	
+	//Player is nearby, and visible
+	if (distance_to_object(objPlayer) < 150 && isLosClear) {
 		state = 2
-
-   }else{
+	}else{
 		state = 1
    }
 }
