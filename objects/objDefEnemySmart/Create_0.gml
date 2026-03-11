@@ -5,6 +5,6 @@ sum = 0
 dmg = 8
 cooldown = false
 prev_state = state;
-speedVal = 3
+speedVal = 1
 //new behaviour
 path = -1
