@@ -40,8 +40,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprEnemySmart",
-    "path":"sprites/sprEnemySmart/sprEnemySmart.yy",
+    "name":"sprEnemy",
+    "path":"sprites/sprEnemy/sprEnemy.yy",
   },
   "spriteMaskId":{
     "name":"sprEnemy",
