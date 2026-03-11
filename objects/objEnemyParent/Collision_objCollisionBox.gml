@@ -1,2 +1,13 @@
-x -= dcos(point_direction(x, y, other.x, other.y))
-y += dsin(point_direction(x, y, other.x, other.y))
+if (!place_meeting(x + lengthdir_x(speed, direction),
+                   y + lengthdir_y(speed, direction),
+                   objCollisionBox))
+{
+    x += lengthdir_x(speed, direction)
+    y += lengthdir_y(speed, direction)
+	image_angle = direction
+}
+else
+{
+    direction += 180
+	image_angle = direction
+}
