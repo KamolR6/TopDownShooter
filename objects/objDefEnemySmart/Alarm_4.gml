@@ -1,0 +1,3 @@
+if(instance_exists(objPlayer)){
+	EnemyPathing(objGame.grid, id, 4, irandom_range(20,40), objPlayer.x, objPlayer.y)
+}

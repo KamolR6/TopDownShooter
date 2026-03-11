@@ -13,7 +13,7 @@ if(enemiesNum < 10){
 	}
 		until(!collision_circle(pos_x, pos_y, 128, all, true, 1))
 		{
-			instance_create_layer(pos_x, pos_y, "Instances", objDefEnemy)
+			instance_create_layer(pos_x, pos_y, "Instances", objDefEnemySmart)
 		}
 
 }
