@@ -15,7 +15,7 @@ function EnemyPathing(gridID ,owner, alarmID, alarmCD, targetX, targetY){
 	//use grid to navigate to target
 	mp_grid_path(gridID, owner.path, owner.x,owner.y, targetX, targetY, 1)
 	
-	path_start(owner.path, owner.speedVal, path_action_stop, true)
+	path_start(owner.path, owner.speedVal * 3, path_action_stop, true)
 	if(owner.state == 2){
 		alarm_set(alarmID, alarmCD)
 	}

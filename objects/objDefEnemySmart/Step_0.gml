@@ -1,4 +1,5 @@
 // Inherit the parent event
+if(instance_exists(objPlayer)){
 event_inherited();
 
 // --- ATTACKING SCRIPT ---
@@ -63,7 +64,7 @@ switch state{
 			if moveState {
 			direction += irandom_range(-90,90)
 			image_angle = direction
-			speed = 1
+			speed = speedVal
 			alarm_set(1, irandom_range(30,60))
 			moveState = false
         }
@@ -73,4 +74,5 @@ switch state{
 		alarm_set(4,1)
 		break
 	
+}
 }
