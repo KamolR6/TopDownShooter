@@ -1,7 +1,7 @@
 // Inherit the parent event
 if(instance_exists(objPlayer)){
 event_inherited();
-
+if(!isSpawning){
 // --- ATTACKING SCRIPT ---
 var dist = distance_to_object(objPlayer)
 
@@ -74,5 +74,6 @@ switch state{
 		alarm_set(4,1)
 		break
 	
+}
 }
 }
