@@ -11,5 +11,7 @@ grid = noone
 global.targetF_sounds = 0;
 global.targetF_limit = 5;
 
+global.sprResize = 0.25
+
 window_set_cursor(cr_cross)
 

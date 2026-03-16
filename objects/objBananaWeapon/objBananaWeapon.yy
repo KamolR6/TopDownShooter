@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprBananaWeapon",
-    "path":"sprites/sprBananaWeapon/sprBananaWeapon.yy",
+    "name":"sprWeaponBanana",
+    "path":"sprites/sprWeaponBanana/sprWeaponBanana.yy",
   },
   "spriteMaskId":null,
   "visible":true,

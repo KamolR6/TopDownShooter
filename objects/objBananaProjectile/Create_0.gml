@@ -5,3 +5,5 @@ returning = false
 objGame.shootCooldown = -1
 startX = x;
 startY = y;
+image_xscale = global.sprResize
+image_yscale = global.sprResize

@@ -79,6 +79,7 @@
     {"id":{"name":"sprFloor","path":"sprites/sprFloor/sprFloor.yy",},},
     {"id":{"name":"sprInfModButton","path":"sprites/sprInfModButton/sprInfModButton.yy",},},
     {"id":{"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},},
+    {"id":{"name":"sprWeaponBanana","path":"sprites/sprWeaponBanana/sprWeaponBanana.yy",},},
     {"id":{"name":"sprWeaponCarrots","path":"sprites/sprWeaponCarrots/sprWeaponCarrots.yy",},},
   ],
   "resourceType":"GMProject",

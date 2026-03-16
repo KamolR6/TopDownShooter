@@ -1,4 +1,4 @@
-var sizeSprite = 32
+var sizeSprite = 64 * global.sprResize
 
 if(room != r_Menu){
 	switch heldGun{
@@ -6,7 +6,7 @@ if(room != r_Menu){
 			gunSprite = sprDefaultWeapon
 			break
 		case 1:
-			gunSprite = sprBananaWeapon
+			gunSprite = sprWeaponBanana
 			break
 		case 2:
 			gunSprite = sprWeaponCarrots
