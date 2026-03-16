@@ -15,7 +15,12 @@ if(!isDisaspearing){
 	}
 
 	if(keyboard_check_pressed(ord("F")) && distance_to_object(objPlayer) <= 32){
-		objGame.heldGun = other.weaponType
+		objGame.heldGun = other.weaponType	
+		
+		var snd = choose(pickup1, pickup2)
+		var inst = audio_play_sound(snd, 1, false)
+		audio_sound_pitch(inst, random_range(0.9, 1.1))
+		
 		instance_destroy()
 		instance_destroy(button)
 	}
