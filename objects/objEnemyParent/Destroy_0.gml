@@ -8,7 +8,7 @@ if(lottery == 1){
 			weapon = instance_create_layer(x, y, "Instances", objBananaWeapon)
 			break
 		case 2:
-			weapon = instance_create_layer(x, y, "Instances", objCarrotWeapon)
+			weapon = instance_create_layer(x, y, "Instances", objWeaponCarrot)
 			weapon.image_xscale = 0.5
 			weapon.image_yscale = 0.5
 	}
