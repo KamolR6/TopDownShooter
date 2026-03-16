@@ -9,7 +9,7 @@ if(room != r_Menu){
 			gunSprite = sprBananaWeapon
 			break
 		case 2:
-			gunSprite = sprCarrotWeapon
+			gunSprite = sprWeaponCarrots
 			break
 }
 	draw_healthbar(2,2,102,12, healthPoints,c_gray,c_red,c_green,0,true,true)
