@@ -32,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprCarrotWeapon",
-    "path":"sprites/sprCarrotWeapon/sprCarrotWeapon.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
